@@ -12,3 +12,4 @@ Gunakan command
 ```
 vim file_interface.py
 ```
+![Screenshot 2025-05-21 215653](https://github.com/user-attachments/assets/cefc5ccc-6282-46c4-b705-f7e009c9f805)
