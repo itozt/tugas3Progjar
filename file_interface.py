@@ -5,7 +5,7 @@ from glob import glob
 
 
 class FileInterface:
-    def _init_(self):
+    def __init__(self):
         os.chdir('files/')
 
     def list(self,params=[]):
