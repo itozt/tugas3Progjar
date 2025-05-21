@@ -49,6 +49,9 @@ class FileInterface:
                 return None
             fp = open(f"{filename}",'rb')
             isifile = base64.b64encode(fp.read()).decode()
+            fp = open(filename,'wb+')
+            fp.write(isifile)
+            fp.cloe()
             return dict(status='OK',data_namafile=filename,data_file=isifile)
         except Exception as e:
             return dict(status='ERROR',data=str(e))
