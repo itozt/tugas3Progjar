@@ -56,7 +56,7 @@ class FileInterface:
         except Exception as e:
             return dict(status='ERROR',data=str(e))
 
-if _name=='main_':
+if __name__='__main__':
     f = FileInterface()
     print(f.list())
     print(f.get(['pokijan.jpg']))
