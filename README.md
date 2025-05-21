@@ -1,4 +1,4 @@
-![Screenshot 2025-05-21 222928](https://github.com/user-attachments/assets/36848a73-b9f8-4786-9cf6-7e51083a269b)# Tugas 3 Pemrograman Jaringan
+# Tugas 3 Pemrograman Jaringan
 Langkah - Langkah Pengerjaan 
 ## 1. Edit File file_server.py di Mesin 1
 Ganti dari port 6666 menjadi port 46666
