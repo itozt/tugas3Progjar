@@ -11,7 +11,7 @@ fp = FileProtocol()
 
 class ProcessTheClient(threading.Thread):
     """Kelas untuk menangani setiap client yang terhubung"""
-    def _init_(self, connection, address):
+    def __init__(self, connection, address):
         self.connection = connection  # Menyimpan koneksi socket
         self.address = address       # Menyimpan alamat client
         threading.Thread._init_(self)
