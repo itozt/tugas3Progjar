@@ -20,7 +20,7 @@ class ProcessTheClient(threading.Thread):
         """Method yang dijalankan saat thread dimulai"""
         while True:
             # Menerima data dari client (maksimal 32 bytes)
-            data = self.connection.recv(32)
+            data = self.connection.recv(4096)
             if data:
                 # Decode data yang diterima
                 d = data.decode()
