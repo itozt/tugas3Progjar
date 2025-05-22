@@ -2,11 +2,11 @@
 
 # Daftar Isi
 Langkah - Langkah Pengerjaan
-1. [Edit File file_server.py]()
-2. [Edit File file_protocol.py]()
-3. [Edit File file_interface.py]()
-4. [Install Netcat]()
-5. [Lakukan Client Implementation]()
+1. [Edit File file_server.py](https://github.com/itozt/tugas3Progjar/tree/main#1%EF%B8%8F%E2%83%A3-edit-file-file_serverpy-di-mesin-1)
+2. [Edit File file_protocol.py](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#2%EF%B8%8F%E2%83%A3-edit-file-file_protocolpy-di-mesin-1)
+3. [Edit File file_interface.py](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#3%EF%B8%8F%E2%83%A3-edit-file-file_interfacepy-di-mesin-1)
+4. [Install Netcat](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#4%EF%B8%8F%E2%83%A3-install-netcat)
+5. [Lakukan Client Implementation](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#5%EF%B8%8F%E2%83%A3-lakukan-client-implementation-dari-operasi-tambahan-tersebut)
 
 Penjelasan Program File Baru
 - [file_Server.py]()
