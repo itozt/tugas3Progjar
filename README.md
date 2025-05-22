@@ -9,11 +9,11 @@ Langkah - Langkah Pengerjaan
 5. [Lakukan Client Implementation]()
 
 Penjelasan Program File Baru
-1. [file_Server.py]()
-2. [file_protocol.py]()
-3. [file_interface.py]()
+- [file_Server.py]()
+- [file_protocol.py]()
+- [file_interface.py]()
 
-# 🌳: Langkah - Langkah Pengerjaan 
+# 🌳 Langkah - Langkah Pengerjaan 
 ## 1️⃣ Edit File file_server.py di Mesin 1
 Ganti port dari 6666 menjadi port 46666. <br>
 Dan ubah `data = self.connection.recv(32)` menjadi `data = self.connection.recv(4096)` <br>
