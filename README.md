@@ -1,11 +1,13 @@
 # Tugas 3 Pemrograman Jaringan
 Langkah - Langkah Pengerjaan 
 ## 1. Edit File file_server.py di Mesin 1
-Ganti dari port 6666 menjadi port 46666
+Ganti dari port 6666 menjadi port 46666. <br>
+Dan ubah `data = self.connection.recv(32)` menjadi `data = self.connection.recv(4096)` <br>
 ```
 vim file_server.py
 ```
-![Screenshot 2025-05-21 214601](https://github.com/user-attachments/assets/1ed38279-dd62-45df-ac20-70f018a03ca4)
+![Screenshot 2025-05-22 181013](https://github.com/user-attachments/assets/59cd8a9d-8fd4-4a36-9cd0-b51326701245)
+
 ## 2. Edit File file_interface.py
 Ganti file asli menjadi file modifikasi yang sudah ada fungsi untuk menghaspu dan mengupload file.<br>
 Gunakan command 
