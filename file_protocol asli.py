@@ -32,7 +32,6 @@ class FileProtocol:
 
 
 if __name__=='__main__':
-    #contoh pemakaian
     fp = FileProtocol()
     print(fp.proses_string("LIST"))
     print(fp.proses_string("GET pokijan.jpg"))
