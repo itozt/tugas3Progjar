@@ -1,26 +1,34 @@
 # Tugas 3 Pemrograman Jaringan
 Langkah - Langkah Pengerjaan 
 ## 1. Edit File file_server.py di Mesin 1
-Ganti dari port 6666 menjadi port 46666. <br>
+Ganti port dari 6666 menjadi port 46666. <br>
 Dan ubah `data = self.connection.recv(32)` menjadi `data = self.connection.recv(4096)` <br>
 ```
 vim file_server.py
 ```
 ![Screenshot 2025-05-22 181013](https://github.com/user-attachments/assets/59cd8a9d-8fd4-4a36-9cd0-b51326701245)
 
-## 2. Edit File file_interface.py
+## 2. Edit File file_protocol.py di Mesin 1
+Ganti <br>
+Dan ubah `c = shlex.split(string_datamasuk.lower())` menjadi `c = shlex.split(string_datamasuk)` <br>
+```
+vim file_protocol.py
+```
+![Screenshot 2025-05-22 181425](https://github.com/user-attachments/assets/766d89ff-b725-47b4-9ef7-5a9fd4d15c32)
+
+## 3. Edit File file_interface.py
 Ganti file asli menjadi file modifikasi yang sudah ada fungsi untuk menghaspu dan mengupload file.<br>
 Gunakan command 
 ```
 vim file_interface.py
 ```
 ![Screenshot 2025-05-21 215653](https://github.com/user-attachments/assets/cefc5ccc-6282-46c4-b705-f7e009c9f805)
-## 3. Install Netcat
+## 4. Install Netcat
 Gunakan command
 ```
 sudo apt install netcat
 ```
-## 4. Lakukan Client Implementation dari operasi tambahan tersebut
+## 5. Lakukan Client Implementation dari operasi tambahan tersebut
 ### 🌴 : LIST
 Tujuan : menampilkan list file yang terdapat pada direktori /files <br>
 Command : ```LIST```
