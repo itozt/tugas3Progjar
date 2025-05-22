@@ -8,11 +8,6 @@ Langkah - Langkah Pengerjaan
 4. [Install Netcat](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#4%EF%B8%8F%E2%83%A3-install-netcat)
 5. [Lakukan Client Implementation](https://github.com/itozt/tugas3Progjar/tree/main?tab=readme-ov-file#5%EF%B8%8F%E2%83%A3-lakukan-client-implementation-dari-operasi-tambahan-tersebut)
 
-Penjelasan Program File Baru
-- [file_Server.py]()
-- [file_protocol.py]()
-- [file_interface.py]()
-
 # 🌳 Langkah - Langkah Pengerjaan 
 ## 1️⃣ Edit File file_server.py di Mesin 1
 Ganti port dari 6666 menjadi port 46666. <br>
