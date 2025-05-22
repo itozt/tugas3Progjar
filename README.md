@@ -1,22 +1,37 @@
 # Tugas 3 Pemrograman Jaringan
+
+# Daftar Isi
+Langkah - Langkah Pengerjaan
+1. [Edit File file_server.py]()
+2. [Edit File file_protocol.py]()
+3. [Edit File file_interface.py]()
+4. [Install Netcat]()
+5. [Lakukan Client Implementation]()
+
+Penjelasan Program File Baru
+1. [file_Server.py]()
+2. [file_protocol.py]()
+3. [file_interface.py]()
+
 Langkah - Langkah Pengerjaan 
 ## 1. Edit File file_server.py di Mesin 1
 Ganti port dari 6666 menjadi port 46666. <br>
 Dan ubah `data = self.connection.recv(32)` menjadi `data = self.connection.recv(4096)` <br>
+Gunakan command 
 ```
 vim file_server.py
 ```
 ![Screenshot 2025-05-22 181013](https://github.com/user-attachments/assets/59cd8a9d-8fd4-4a36-9cd0-b51326701245)
 
 ## 2. Edit File file_protocol.py di Mesin 1
-Ganti <br>
-Dan ubah `c = shlex.split(string_datamasuk.lower())` menjadi `c = shlex.split(string_datamasuk)` <br>
+Ubah `c = shlex.split(string_datamasuk.lower())` menjadi `c = shlex.split(string_datamasuk)` <br>
+Gunakan command 
 ```
 vim file_protocol.py
 ```
 ![Screenshot 2025-05-22 181425](https://github.com/user-attachments/assets/766d89ff-b725-47b4-9ef7-5a9fd4d15c32)
 
-## 3. Edit File file_interface.py
+## 3. Edit File file_interface.py di Mesin 1
 Ganti file asli menjadi file modifikasi yang sudah ada fungsi untuk menghaspu dan mengupload file.<br>
 Gunakan command 
 ```
