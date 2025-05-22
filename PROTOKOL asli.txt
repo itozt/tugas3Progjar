@@ -49,6 +49,8 @@ DELETE
 - GAGAL:
   - status: ERROR
   - data: pesan kesalahan (File not found)
+* PENJELASAN TAMBAHAN:
+Fungsi delete pada FileInterface bekerja dengan mengambil nama file dari parameter pertama (params[0]), lalu memeriksa keberadaan file tersebut di direktori kerja menggunakan os.path.exists(). Jika file ditemukan, metode os.remove() dipanggil untuk menghapus file, dan fungsi mengembalikan kamus (dict) dengan status='OK' serta pesan konfirmasi bahwa file berhasil dihapus. Apabila file tidak ada, fungsi akan mengembalikan status='ERROR' dengan keterangan “File not found”. Seluruh proses dilindungi blok try...except untuk menangkap dan melaporkan kesalahan lain (misalnya perizinan) sebagai status='ERROR' beserta detail pengecualian.
 
 UPLOAD
 * TUJUAN: mengupload file dengan membuat file baru dan mmengirimkan isi dile tersebut dalm encode base64
@@ -60,3 +62,5 @@ UPLOAD
 - GAGAL:
   - status: ERROR
   - data: pesan kesalahan
+* PENJELASAN TAMBAHAN:
+Fungsi upload memulai dengan membaca nama file yang ingin diunggah dari params[0] dan langsung memeriksa apakah file tersebut sudah ada. Jika sudah ada, fungsi segera mengembalikan status='OK' tanpa menimpa file lama. Jika belum, sisa parameter (params[1:]) dianggap sebagai potongan string Base64, digabung kembali menjadi satu string dengan " ".join(), lalu didekode menjadi bytes menggunakan base64.b64decode(). Hasil dekode kemudian ditulis ke disk dengan membuka file dalam mode tulis (open(filename, 'w')) dan memanggil f.write(filedata). Jika semua langkah berhasil, fungsi mengembalikan status='OK' dan pesan sukses; jika terjadi kesalahan (misalnya data Base64 tidak valid atau masalah izin), blok except menangkap pengecualian dan mengembalikan status='ERROR' beserta penjelasan kesalahan.
