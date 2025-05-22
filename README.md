@@ -29,20 +29,27 @@ Gunakan command
 sudo apt install netcat
 ```
 ## 5. Lakukan Client Implementation dari operasi tambahan tersebut
+Pada terminal 1 : Jalankan command `python3 file_server.py` <br>
+Pada terminal 2 : Jalankan command `nc -vvv 127.16.16.101 46666` <br>
 ### 🌴 : LIST
 Tujuan : menampilkan list file yang terdapat pada direktori /files <br>
-Command : ```LIST```
-![Screenshot 2025-05-21 222928](https://github.com/user-attachments/assets/d961a913-d1c3-4af6-a97e-4fbc215df341)
+Command : ```list```<br>
+Hasil : <br>
+![List](https://github.com/user-attachments/assets/97bb8921-7873-41b3-ab27-765fe2795d12)
 ### 🌴 : GET 
 Tujuan : mengunduh file berupa encode base64<br>
-Command : ```GET [nama_file.tipe_file]```
-![Screenshot 2025-05-21 223416](https://github.com/user-attachments/assets/3e95e5fc-3523-4e43-96ab-cf58fe224d71)
+Command : ```get [nama_file.tipe_file]```<br>
+Hasil : <br>
+![Get](https://github.com/user-attachments/assets/136228ea-9cca-48a3-ae02-645af8f38e60)
 ### 🌴 : DELETE
 Tujuan : menghapus file yang ada di direktori /files <br>
-Command : ```DELETE [nama_file.tipe_file]```
-![Screenshot 2025-05-21 223636](https://github.com/user-attachments/assets/156aefe4-e0f3-48dc-95c4-e23021274abd)
+Command : ```delete [nama_file.tipe_file]```<br>
+Hasil : <br>
+![Delete](https://github.com/user-attachments/assets/2c0887bf-3e8a-44d5-8ad5-5bdecbb3de68)
 ### 🌴 : UPLOAD
 Tujuan : mengunggah/mengupload file ke direktori /files<br>
-Command : ``` ```
+Command : ```upload [namafile.tipefile] [encodebase64 dari isi file yang inign diupload]``` <br>
+Hasil : <br>
+![Upload](https://github.com/user-attachments/assets/9369f351-9a13-4525-8fad-0fe4f38e6f06)
 
 
